@@ -1,21 +1,28 @@
-import { Paper } from "@mui/material";
+import { Container, Grid, Paper } from "@mui/material";
 import Head from "next/head";
 import style from "../../styles/product.module.css";
 
 const product = (props) => {
   const { product } = props;
   return (
-    <>
+    <Container>
       <Head>
         <title>{product.title}</title>
       </Head>
-      <article className={style.container}>
-        <Paper className={style.paper}>
-            <div>test</div>
-            <div>{product.description}</div>
+      <main className={style.container}>
+        <Paper className={style.paper} elevation={4}>
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            className={style.cardContainer}
+          >
+            <Grid item md={4} xs={12} className={style.imageContainer}></Grid>
+            <Grid item md={8} xs={12} className={style.content}></Grid>
+          </Grid>
         </Paper>
-      </article>
-    </>
+      </main>
+    </Container>
   );
 };
 
