@@ -1,0 +1,8 @@
+.container {
+  margin: 1rem;
+  height: 95vh;
+}
+.paper {
+  height: 100%;
+  min-height: 550px;
+}

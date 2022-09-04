@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,9 +14,10 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to FrontEnd challenge</h1>
 
-        <p className={styles.description}>good luck</p>
-
-        
+        <p className={styles.description}>
+          feel free to check products <br />
+          good luck
+        </p>
       </main>
 
       <footer className={styles.footer}>
