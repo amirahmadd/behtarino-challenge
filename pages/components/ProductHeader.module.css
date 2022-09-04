@@ -1,0 +1,18 @@
+.productHeaderContainer {
+  margin-bottom: 2rem;
+}
+.title {
+  font-weight: bolder;
+  color: #353535;
+}
+
+.ratingStars {
+  color: #ff7a76;
+}
+.caption {
+  color: #9eadac;
+}
+.price {
+  font-size: larger;
+  font-weight: 500;
+}

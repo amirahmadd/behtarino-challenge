@@ -1,6 +1,7 @@
 import { Container, Grid, Paper } from "@mui/material";
 import Head from "next/head";
 import style from "../../styles/product.module.css";
+import ProductContent from "../components/ProductContent";
 import ProductImages from "../components/ProductImages";
 
 const product = (props) => {
@@ -9,10 +10,7 @@ const product = (props) => {
     <Container>
       <Head>
         <title>{product.title}</title>
-        <meta
-          name="description"
-          content={product.description}
-        />
+        <meta name="description" content={product.description} />
       </Head>
       <main className={style.container}>
         <Paper className={style.paper} elevation={4}>
@@ -25,7 +23,9 @@ const product = (props) => {
             <Grid item md={4} xs={12} className={style.imageContainer}>
               <ProductImages src={product.image} productTitle={product.title} />
             </Grid>
-            <Grid item md={8} xs={12} className={style.content}></Grid>
+            <Grid item md={8} xs={12} className={style.content}>
+              <ProductContent product={product} />
+            </Grid>
           </Grid>
         </Paper>
       </main>

@@ -1,0 +1,9 @@
+.sectionTitle {
+  color: rgb(142, 141, 141);
+  margin-bottom: 1rem;
+}
+
+.productDescription {
+  color: gray;
+  font-size: small;
+}
