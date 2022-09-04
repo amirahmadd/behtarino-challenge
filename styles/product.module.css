@@ -5,7 +5,7 @@
 .paper {
   height: 100%;
   min-height: 550px;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 1rem;
 }
 
@@ -18,16 +18,17 @@
   background-image: linear-gradient(#63f3c9, #7acaae);
   height: 100%;
   padding: 1rem;
+  border-radius: 1rem 0rem 0rem 1rem;
 }
 
 .content {
   height: 100%;
   padding: 1rem;
-
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .imageContainer {
     max-height: 30%;
+    border-radius: 1rem;
   }
 }
