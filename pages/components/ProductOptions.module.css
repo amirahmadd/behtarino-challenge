@@ -13,7 +13,7 @@
   display: flex;
   height: 100px;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   border-right: 1px solid lightgray;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   height: 100px;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .colorBall {
@@ -51,9 +51,13 @@
 
 .optionTitle {
   display: flex;
-  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 2.4rem;
 }
-
+.colorTitle {
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
 @media screen and (max-width: 899px) {
   .colorSelect {
     border-right: 0;
@@ -64,6 +68,6 @@
   }
   .colorTitle {
     display: flex;
-    justify-content: center;
+    padding-left: 2.3rem;
   }
 }
