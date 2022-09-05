@@ -1,3 +1,4 @@
+import { useAddToCart } from "../utils/useAddToCart";
 import ProductAction from "./ProductAction";
 import style from "./ProductContent.module.css";
 import ProductDescription from "./ProductDescription";
@@ -5,11 +6,12 @@ import ProductHeader from "./ProductHeader";
 
 const ProductContent = (props) => {
   const { product } = props;
+  const { addToCart, loading } = useAddToCart(product.id);
   return (
     <div className={style.contentContainer}>
       <ProductHeader product={product} />
       <ProductDescription description={product.description} />
-      <ProductAction/>
+      <ProductAction addToCart={addToCart} loading={loading} />
     </div>
   );
 };

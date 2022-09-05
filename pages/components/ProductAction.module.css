@@ -19,3 +19,7 @@
 .shareBtn {
   color: gray;
 }
+
+.iconBtn:hover {
+    background-color: inherit;
+}
