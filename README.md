@@ -8,4 +8,4 @@ run the development server:
 yarn dev
 ```
 
-Open [http://localhost:3008](http://localhost:3008) with your browser to see the result.
+Open [http://localhost:3008](http://localhost:3008) or [http://localhost:3008/products/[id]](http://localhost:3008/products/15) with your browser to see the result.
