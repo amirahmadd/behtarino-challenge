@@ -7,7 +7,7 @@ import {
   productSize,
   productColors,
   productAvailableCount,
-} from "../../constants/productDetails";
+} from "../constants/productDetails";
 
 const ProductOptions = () => {
   const [selected, setSelected] = useState(productColors[0]?.id);

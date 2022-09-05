@@ -1,8 +1,8 @@
 import { Container, Grid, Paper } from "@mui/material";
 import Head from "next/head";
 import style from "../../styles/product.module.css";
-import ProductContent from "../components/ProductContent";
-import ProductImages from "../components/ProductImages";
+import ProductContent from "../../components/ProductContent";
+import ProductImages from "../../components/ProductImages";
 
 const product = (props) => {
   const { product } = props;
