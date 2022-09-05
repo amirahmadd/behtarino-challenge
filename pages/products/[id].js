@@ -14,12 +14,7 @@ const product = (props) => {
       </Head>
       <main className={style.container}>
         <Paper className={style.paper} elevation={4}>
-          <Grid
-            container
-            justifyContent="center"
-            alignItems="center"
-            className={style.cardContainer}
-          >
+          <Grid container className={style.cardContainer}>
             <Grid item md={4} xs={12} className={style.imageContainer}>
               <ProductImages src={product.image} productTitle={product.title} />
             </Grid>

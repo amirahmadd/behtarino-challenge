@@ -1,20 +1,10 @@
 .imageSection {
   height: 100%;
   position: relative;
+  display: flex;
 }
 
 .imageContainer {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-
-@media screen and (max-width: 899px) {
-  .imageContainer {
-    left: 50%;
-  }
+  margin: auto;
+  display: flex;
 }
