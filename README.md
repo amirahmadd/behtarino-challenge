@@ -9,3 +9,5 @@ yarn dev
 ```
 
 Open [http://localhost:3008](http://localhost:3008) or [http://localhost:3008/products/[id]](http://localhost:3008/products/15) with your browser to see the result.
+
+revalidate using http://localhost:3008/api/revalidate?secret=yourSecretCode&product_id=1
