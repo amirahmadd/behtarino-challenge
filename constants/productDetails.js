@@ -1,9 +1,11 @@
+import colors from "./colors";
+
 export const productColors = [
-  { id: 1, color: "#63f3c9" },
-  { id: 2, color: "#ffff72" },
-  { id: 3, color: "#ff7a76" },
-  { id: 4, color: "#d6e2e1" },
-  { id: 5, color: "black" },
+  { id: 1, color: colors.green },
+  { id: 2, color: colors.yellow },
+  { id: 3, color: colors.red },
+  { id: 4, color: colors.gray },
+  { id: 5, color: colors.black },
 ];
 export const productSize = [
   { id: 1, title: "UK 7" },

@@ -15,7 +15,6 @@ const ColorPicker = (props) => {
         >
           <span
             className={style.colorBall}
-            //   selected === color ? style.ActiveColorBall :
             style={{ backgroundColor: color.color }}
             onClick={() => clickHandler(color)}
           />
