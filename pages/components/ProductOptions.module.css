@@ -13,7 +13,6 @@
   display: flex;
   height: 100px;
   align-items: center;
-  /* justify-content: center; */
   border-right: 1px solid lightgray;
 }
 
@@ -21,7 +20,6 @@
   display: flex;
   height: 100px;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .colorBall {
@@ -68,6 +66,6 @@
   }
   .colorTitle {
     display: flex;
-    padding-left: 2.3rem;
+    justify-content: center;
   }
 }
