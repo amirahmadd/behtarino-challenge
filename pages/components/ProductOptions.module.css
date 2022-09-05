@@ -1,0 +1,69 @@
+.optionContainer {
+  margin: 2rem 0;
+}
+
+.colorSelect {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  border-right: 1px solid lightgray;
+}
+
+.WithBorderOption {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid lightgray;
+}
+
+.option {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorBall {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ActiveColorBall {
+  border: 2px solid;
+  padding: 2px;
+  margin-top: -2px;
+  border-radius: 50%;
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  margin-right: 1rem;
+}
+.noBorder {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  margin-right: 1rem;
+}
+
+.optionTitle {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 899px) {
+  .colorSelect {
+    border-right: 0;
+    justify-content: center;
+  }
+  .WithBorderOption {
+    border-right: 0;
+  }
+  .colorTitle {
+    display: flex;
+    justify-content: center;
+  }
+}
