@@ -40,12 +40,20 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const productId = params.id;
-  const res = await fetch(`https://fakestoreapi.com/products/${productId}`);
-  const product = await res.json();
-  return {
-    props: {
-      product,
-    },
-  };
+  try {
+    const productId = params.id;
+    const res = await fetch(`https://fakestoreapi.com/products/${productId}`);
+    const product = await res.json();
+    if (!res.ok) {
+      return { notFound: true };
+    }
+    return {
+      props: {
+        product,
+      },
+    };
+  } catch (error) {
+    console.log(error);
+    return { notFound: true };
+  }
 }
