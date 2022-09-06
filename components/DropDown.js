@@ -20,9 +20,13 @@ const DropDown = (props) => {
         label={title}
         className={style.select}
         variant="standard"
+        disableUnderline
         onChange={handleChange}
         IconComponent={(props) => (
-          <i {...props} className={`material-icons ${props.className} ${style.icon}`}>
+          <i
+            {...props}
+            className={`material-icons ${props.className} ${style.icon}`}
+          >
             <KeyboardArrowDown />
           </i>
         )}
