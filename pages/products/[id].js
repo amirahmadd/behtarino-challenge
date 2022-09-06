@@ -1,4 +1,4 @@
-import { Container, Grid, Paper } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Head from "next/head";
 import style from "../../styles/product.module.css";
 import ProductContent from "../../components/ProductContent";
@@ -13,7 +13,7 @@ const product = (props) => {
         <meta name="description" content={product.description} />
       </Head>
       <main className={style.container}>
-        <Paper className={style.paper} elevation={4}>
+        <div className={style.paper}>
           <Grid container className={style.cardContainer}>
             <Grid item md={4} xs={12} className={style.imageContainer}>
               <ProductImages src={product.image} productTitle={product.title} />
@@ -22,7 +22,7 @@ const product = (props) => {
               <ProductContent product={product} />
             </Grid>
           </Grid>
-        </Paper>
+        </div>
       </main>
     </Container>
   );
