@@ -25,8 +25,8 @@ const ProductHeader = (props) => {
         </Grid>
       </Grid>
       <div>
-        <Typography variant="caption" className={style.caption}>
-          {product.category}
+        <Typography variant="subtitle2" className={style.caption}>
+          <i>{product.category}</i>
         </Typography>
       </div>
       <div>
